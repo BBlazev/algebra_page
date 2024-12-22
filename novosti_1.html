@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="novosti.css"/>
+    <script src="odjava.js"></script>
+    <script src="nastavniplan.js"></script>
+
+
+    <title>SUPIT</title>
+    
+</head>
+<body>
+  <section id="navbar" >
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+      <a class="navbar-link" href="Pocetna.html" id="logo">
+        <img src="img/Algebra-logo.png" alt="logoSmall" width="45" height="40">
+      <a class="navbar-brand" href="Pocetna.html"><span style="color: orange;">Algebra</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Prijava</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="odjava()">Odjava</a>
+              </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="Pocetna.html">Početna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">O nama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Novosti.html">Novosti</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Kontakt.html">Kontakt</a>
+                </li>
+                <li class="nav-item" id="nastavniPlanItem" style="display: none;">
+                  <a class="nav-link" href="NastavniPlan.html">Nastavni plan</a>
+                </li>
+            </ul>    
+      </div>
+    </nav>
+  </section>
+  <section id="glavno">
+    <div class="slika1">
+        <img src="img/novost1.jpg" alt="slika1">
+        <div class="slika-text">
+            Student Josip Stanešič 12. je sistemaš svijeta i dobitnik medalje izvrsnosti.
+        </div>
+    </div>
+    <h1 class="about-text"> <b><font size="+3">WorldSkills natjecanje - Kazan 2019. </font></b></h1>
+
+    <div class="tekst-onama">
+                        Nakon godinu dana priprema za natjecanje WorldSkills
+                        Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                        cijelog svijeta, trud se itekako isplatio. Josip,
+                        student 3. godine preddiplomskog studija sistemskog
+                        inženjerstva osvojio je 12. mjesto u vještini IT
+                        Networks and System Administration te osvojio medalju
+                        izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                        mentorima koji su ga pripremali za ovo natjecanje –
+                        voditelju studija sistemskog inženjerstva Silviju
+                        Papiću, voditelju katedre za operacijske sustave –
+                        Vedranu Dakiću i asistentu na studiju sistemskog
+                        inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+                        studentu 3.godine preddiplomskog studija programskog
+                        inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                        za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                        16.mjestu u vještini IT Software Solutions for Business.
+    </div>
+
+  </section>
+  <section id="slikice">
+    <div class="thumbnail">
+        <img src="galerija1.jpg" alt="Thumbnail 1" onclick="openModal('galerija1.jpg')">
+      </div>
+      <div class="thumbnail">
+        <img src="galerija2.jpg"  alt="Thumbnail 2" onclick="openModal('galerija2.jpg')">
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="slika1">
+      </div>
+  </section>
+
+  <section id="video">
+    <video controls>
+        <source src="video\worldskills.mp4" type="video/mp4">
+    </video>
+  </section>
+  <section id="kako_do_nas" style="background-color: #f8f9fa; padding: 50px 0;">
+    <div id="krajfoot" style="background-image: url('img/zaiskri-bg.jpg'); height: 300px; background-position: center; background-size: cover; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 80%; color: #fff;">
+            <h1 style="font-size: 40px; font-weight: bold; line-height: 1.4; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                <span style="font-weight: normal;">BUDI IZVRSTAN U ONOM ŠTO VOLIŠ.</span> <br>
+                <span style="color: #ffcc00; font-weight: bold; font-size: 35px; display: inline-block; animation: spark 1.5s ease-in-out infinite;">ZAISKRI!</span>
+            </h1>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <script src="novosti.js"></script>
+
+</body>
+</html>
